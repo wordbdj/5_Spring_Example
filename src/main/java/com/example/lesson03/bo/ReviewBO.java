@@ -38,5 +38,9 @@ public class ReviewBO {
 		
 		return reviewMapper.updateReviewById(id, review);
 	}
+	
+	public void deleteReviewById(int id) {
+		reviewMapper.deleteReviewById(id);
+	}
 
 }
