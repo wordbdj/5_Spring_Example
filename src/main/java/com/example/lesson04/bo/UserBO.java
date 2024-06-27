@@ -25,4 +25,14 @@ import com.example.lesson04.mapper.UserMapper;
 		public User getLatestUser() {
 			return userMapper.selectLatestUser();
 		}
+		
+		// input: name 
+		// output: boolean (어떻게 보낼꺼에 따라 다르다, int도 가능)
+		public boolean isDuplicationByName(String name) {
+			
+			return userMapper.isDuplicationByName(name);
+			
+		}
+		
+		
 	}
