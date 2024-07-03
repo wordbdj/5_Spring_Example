@@ -46,7 +46,7 @@ public class Lesson07Ex02RestController {
 		// return studentRepository.findByNameStartingWith("전");
 		
 		// 9) id가 2 ~ 5까지 조회 	between
-		// return studentRepository.findByIdBetween(2, 5);
+		 return studentRepository.findByIdBetween(2, 5);
 	}
 
 	
