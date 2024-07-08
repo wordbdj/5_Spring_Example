@@ -23,7 +23,7 @@ import lombok.ToString;
 @Builder(toBuilder = true) // setter를 대신해서 내용을 담음, toBuilder = true 필드 수정을 허용하겠다
 @Getter
 @Table(name = "new_student") // 테이블 이름 설정
-@Entity // 이 객체는 엔티티다. BO-JPA-DB 
+@Entity // 이 객체는 엔티티다. BO-JPA-DB  (name="") 으로 이름 변경 가능
 public class StudentEntity {
 	@Id // pk 식별자 등록
 	@GeneratedValue(strategy = GenerationType.IDENTITY) // insert시 방금 들어간 id 가져옴
